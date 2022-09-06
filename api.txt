@@ -1,0 +1,2 @@
+openapi-generator generate -i ~/Projects/personal/apps/transaction-control/openapi/TransactionControl.yaml \
+-g typescript-axios -o ~/Projects/personal/apps/transaction-control/src/api/TransactionControl --skip-validate-spec

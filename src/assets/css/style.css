@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-basic-background text-black;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-semibold;
+  }
+
+  label {
+    @apply text-basic-dark text-xs font-semibold;
+  }
+}
+
+@layer components {
+  .form-input,
+  .form-select {
+    @apply mt-1;
+  }
+
+  .btn {
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+
+    @apply transform-none focus:ring-0 active:ring-0 hover:shadow-sm;
+  }
+}
