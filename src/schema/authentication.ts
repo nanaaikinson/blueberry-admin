@@ -1,6 +1,6 @@
 import { object, string } from "yup";
 
 export const loginValidationSchema = object().shape({
-  email: string().required().email().label("Email"),
+  username: string().required().label("Username"),
   password: string().required().required(),
 });

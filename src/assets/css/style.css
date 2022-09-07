@@ -33,4 +33,12 @@
 
     @apply transform-none focus:ring-0 active:ring-0 hover:shadow-sm;
   }
+
+  .btn,
+  .card,
+  .form-input,
+  .form-select,
+  .form-checkbox {
+    @apply rounded-[4px];
+  }
 }

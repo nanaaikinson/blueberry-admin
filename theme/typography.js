@@ -25,4 +25,7 @@ module.exports = {
   p: {
     marginBottom: "1rem",
   },
+  body: {
+    fontSize: "14px",
+  },
 };
