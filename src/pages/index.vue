@@ -62,8 +62,10 @@ import { useField, useForm } from "vee-validate";
 import { loginValidationSchema } from "@/schema/authentication";
 import ErrorVue from "../components/common/Error.vue";
 import type { ILoginForm } from "@/types/authentication";
+import { useRouter } from "vue-router";
 
 // Data
+const router = useRouter();
 const { errors, validate } = useForm<ILoginForm>({
   validationSchema: loginValidationSchema,
 });
@@ -75,7 +77,7 @@ const login = async () => {
   const { valid } = await validate();
 
   if (valid) {
-    //
+    router.push("/app");
   }
 };
 </script>

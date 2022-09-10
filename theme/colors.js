@@ -4,9 +4,10 @@
 module.exports = {
   colors: {
     primary: {
-      light: "#29aafd", // For lighter primary color
-      DEFAULT: "#11a1fd", // Normal primary color
-      dark: "#085db6", // Used for hover, active, etc.
+      light: "#4cc3fd",
+      DEFAULT: "#11a1fd",
+      semi: "#0c7dd9",
+      dark: "#085db6",
     },
     danger: {
       light: "#f54050",
@@ -14,25 +15,34 @@ module.exports = {
       dark: "#dc2737",
     },
     success: {
-      light: "#39cd99",
+      light: "#3cd795",
       DEFAULT: "#07c180",
-      dark: "#069a66",
+      semi: "#06a57d",
+      dark: "#038673",
     },
     info: {
-      light: "#7b91fa",
+      light: "#8399fb",
       DEFAULT: "#5a75f9",
-      dark: "#5169e0",
+      semi: "#415ad8",
+      dark: "#3247b4",
     },
     warning: {
-      light: "#ffad5a",
+      light: "#ffb866",
       DEFAULT: "#ff9931",
-      dark: "#e68a2c",
+      semi: "#db7823",
+      dark: "#b35b17",
     },
     basic: {
-      light: "#97b1c4",
+      light: "#cfdfe7",
+      semi: "#a7c1d2",
       DEFAULT: "#7d9eb5",
-      dark: "#647e91",
+      dark: "#486f88",
       background: "#f3f7f9",
+    },
+    "dark-blue": {
+      light: "#243b67",
+      DEFAULT: "#0c2556",
+      dark: "#0b214d",
     },
     black: "#213345",
   },
