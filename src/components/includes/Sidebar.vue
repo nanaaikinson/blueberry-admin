@@ -44,6 +44,13 @@
           <span>Invoices</span>
         </a>
       </li>
+
+      <li>
+        <a href="#" class="nav-link">
+          <ChartBarSquareIcon class="h-5 w-5" />
+          <span>Charts</span>
+        </a>
+      </li>
     </ul>
   </aside>
 </template>
@@ -55,6 +62,7 @@ import {
   TagIcon,
   DocumentIcon,
   ShoppingCartIcon,
+  ChartBarSquareIcon,
 } from "@heroicons/vue/24/outline";
 
 type SidebarProps = {
