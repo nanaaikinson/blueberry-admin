@@ -11,12 +11,12 @@
       <ul class="flex items-center space-x-4">
         <li>
           <button class="flex items-center space-x-2">
-            <BellIcon class="h-5 w-5 text-basic-semi" />
+            <BellIcon class="h-5 w-5 text-basic-dark" />
           </button>
         </li>
         <li>
           <button class="flex items-center space-x-2">
-            <Cog6ToothIcon class="h-5 w-5 text-basic-semi" />
+            <Cog6ToothIcon class="h-5 w-5 text-basic-dark" />
           </button>
         </li>
         <li>

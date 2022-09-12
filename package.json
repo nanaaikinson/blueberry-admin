@@ -5,13 +5,15 @@
     "dev": "vite",
     "build": "run-p type-check build-only",
     "preview": "vite preview --port 4173",
+    "test": "vitest --environment jsdom --run",
     "test:unit": "vitest --environment jsdom",
     "test:unit:coverage": "vitest --environment jsdom --coverage",
     "test:e2e": "start-server-and-test preview http://localhost:4173/ 'cypress open --e2e'",
     "test:e2e:ci": "start-server-and-test preview http://localhost:4173/ 'cypress run --e2e'",
     "build-only": "vite build",
     "type-check": "vue-tsc --noEmit -p tsconfig.vitest.json --composite false",
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@headlessui/vue": "^1.7.0",
@@ -53,6 +55,7 @@
     "vite": "^3.0.9",
     "vite-plugin-pages": "^0.26.0",
     "vitest": "^0.23.0",
-    "vue-tsc": "^0.40.7"
+    "vue-tsc": "^0.40.7",
+    "husky": "^8.0.0"
   }
 }

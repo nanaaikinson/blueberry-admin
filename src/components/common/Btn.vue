@@ -11,7 +11,7 @@
 import { computed, toRefs } from "vue";
 
 type BtnProps = {
-  variant:
+  variant?:
     | "primary"
     | "success"
     | "danger"
@@ -27,6 +27,7 @@ type BtnProps = {
 
 // Props
 const props = withDefaults(defineProps<BtnProps>(), {
+  variant: "primary",
   size: "md",
   block: false,
   pill: false,

@@ -1,6 +1,6 @@
 <template>
   <div class="flex h-screen w-screen items-center justify-center container">
-    <div class="w-full max-w-md justify-center">
+    <div class="w-full max-w-lg justify-center">
       <Card class="p-10">
         <div class="text-center mb-8">
           <h3 class="font-semibold">Login</h3>
@@ -9,7 +9,7 @@
 
         <form @submit.prevent="login">
           <div class="mb-4">
-            <label for="text" class="uppercase">username</label>
+            <label for="text">username</label>
             <input
               type="text"
               name="username"
@@ -23,10 +23,8 @@
 
           <div class="mb-4">
             <label for="password" class="flex items-center justify-between">
-              <span class="uppercase">password</span>
-              <a href="#" class="text-primary text-sm font-normal"
-                >Forgot Password?</a
-              >
+              <span>password</span>
+              <a href="#" class="text-primary font-normal">Forgot Password?</a>
             </label>
             <input
               type="password"
@@ -44,9 +42,11 @@
           </div>
 
           <div class="text-center">
-            <p class="text-center space-x-1">
+            <p class="space-x-1">
               <span>Don't have an account? </span>
-              <a href="#" class="text-primary">Sign Up</a>
+              <router-link :to="{ name: 'register' }" class="text-primary">
+                Sign Up
+              </router-link>
             </p>
           </div>
         </form>
@@ -81,3 +81,9 @@ const login = async () => {
   }
 };
 </script>
+
+<route lang="json">
+{
+  "name": "index"
+}
+</route>
